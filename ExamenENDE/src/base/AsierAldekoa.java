@@ -2,7 +2,7 @@ package base;
 
 import java.util.Scanner;
 
-public class AsierIza {
+public class AsierAldekoa {
 	private static Scanner input = new Scanner(System.in);
 
 	public static void main(String[] args) {
@@ -10,12 +10,13 @@ public class AsierIza {
 		int secreto = (int) (Math.random() * 10);
 		int intentos = 0;
 		do {
-			System.out.println("Adivina un número entero entre 0 y 9 (incluidos): ");
+			System.out.println("Adivina un nï¿½mero entero entre 0 y 9 (incluidos): ");
 			numero = input.nextInt();
 			intentos = intentos + 1;
 		} while (numero != secreto);
 
-		System.out.println("¡Acertaste tras " + intentos + " intentos!");
+		System.out.println("ï¿½Acertaste tras " + intentos + " intentos!");
+		System.out.println("Hola");
 
 	}
 }
